@@ -48,3 +48,30 @@ exports.submitVote = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
+// 7️⃣ Dev Tool: Reset User Vote Status
+exports.resetUserVote = async (req, res) => {
+  try {
+    const { aadhaar } = req.body;
+    const user = await User.findOne({ aadhaarNumber: aadhaar });
+    if (!user) return res.status(404).json({ message: "User not found" });
+
+    user.hasVoted = false;
+    await user.save();
+
+    res.json({ message: `Vote status reset for ${user.fullName} (${aadhaar})` });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+// 8️⃣ Dev Tool: Reset Entire Election (DB Only)
+exports.resetElection = async (req, res) => {
+  try {
+    await Vote.deleteMany({});
+    await User.updateMany({}, { hasVoted: false });
+    res.json({ message: "Election DB reset. Votes cleared, User status reset." });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};

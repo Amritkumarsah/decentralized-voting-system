@@ -5,6 +5,22 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  aadhaar: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  digilockerId: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  dob: {
+    type: String
+  },
+  gender: {
+    type: String
+  },
   isVerified: {
     type: Boolean,
     default: false

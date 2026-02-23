@@ -1,9 +1,6 @@
 const User = require("../models/User");
 const mockData = require("../data/mockDigilocker.json");
 
-// Define the fixed OTP for this mock implementation
-const MOCK_OTP = "123456";
-
 /**
  * Step 1: Login with Aadhaar
  * Checks if Aadhaar exists in mockDigilocker.json
@@ -28,7 +25,7 @@ exports.mockDigilockerLogin = async (req, res) => {
     // If valid, send "OTP sent" response
     res.json({
       message: "OTP sent successfully to registered mobile (Mock)",
-      otp: MOCK_OTP // Sending it back for easy testing
+      otp: validUser.otp || "123456" // Send back users specific OTP or fallback
     });
 
   } catch (err) {
@@ -49,15 +46,18 @@ exports.verifyOtp = async (req, res) => {
       return res.status(400).json({ message: "Aadhaar and OTP are required" });
     }
 
-    // 1. Verify OTP
-    if (otp !== MOCK_OTP) {
-      return res.status(401).json({ message: "Invalid OTP" });
-    }
-
-    // 2. Retrieve user details from Mock Data again (security check)
+    // 1. Retrieve user details from Mock Data 
     const validUser = mockData.find((u) => u.aadhaar === aadhaar);
     if (!validUser) {
       return res.status(404).json({ message: "User record not found" });
+    }
+
+    // 2. Verify OTP against the user's specific mock OTP
+    // Default to "123456" if not specified in json
+    const validOtp = validUser.otp || "123456";
+
+    if (otp !== validOtp) {
+      return res.status(401).json({ message: "Invalid OTP" });
     }
 
     // 3. Find or Create User in MongoDB
