@@ -1,0 +1,32 @@
+.digilocker-card {
+  max-width: 420px;
+  padding: 32px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  text-align: center;
+}
+
+.digilocker-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.lock-icon {
+  font-size: 26px;
+}
+
+.digilocker-subtitle {
+  font-size: 14px;
+  color: #cfd8dc;
+  margin-bottom: 24px;
+}

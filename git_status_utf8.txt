@@ -1,0 +1,75 @@
+﻿On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 4 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+	new file:   .gitignore
+	new file:   build/asset-manifest.json
+	new file:   build/favicon.ico
+	new file:   build/index.html
+	new file:   build/logo192.png
+	new file:   build/logo512.png
+	new file:   build/manifest.json
+	new file:   build/robots.txt
+	new file:   build/static/css/main.8b907b28.css
+	new file:   build/static/css/main.8b907b28.css.map
+	new file:   build/static/js/453.dc03eb89.chunk.js
+	new file:   build/static/js/453.dc03eb89.chunk.js.map
+	new file:   build/static/js/main.74b840d0.js
+	new file:   build/static/js/main.74b840d0.js.LICENSE.txt
+	new file:   build/static/js/main.74b840d0.js.map
+	new file:   build/static/media/step_login.28b6d103549654e2cf43.png
+	new file:   build/static/media/step_vote.0cbe1f0b7c310880d033.png
+	new file:   build/static/media/step_wallet.51ee2dbc06127e37861e.png
+	new file:   src/abi/contractABI.json
+	new file:   src/assets/ballot_box.png
+	new file:   src/assets/evm_machine.png
+	new file:   src/assets/step_login.png
+	new file:   src/assets/step_vote.png
+	new file:   src/assets/step_wallet.png
+	new file:   src/assets/vvpat_machine.png
+	new file:   src/components/Admin.js
+	new file:   src/components/Admin/ManageCandidates.js
+	new file:   src/components/Admin/ManageCategories.js
+	new file:   src/components/Background.js
+	new file:   src/components/BiometricScanner.js
+	new file:   src/components/Hero.js
+	new file:   src/components/Login.js
+	new file:   src/components/MetaMaskConnect.js
+	new file:   src/components/Navbar.js
+	new file:   src/components/OTPVerify.js
+	new file:   src/components/ProtectedRoute.js
+	new file:   src/components/Results.js
+	new file:   src/components/Vote.js
+	new file:   src/index.css
+	new file:   src/index.js
+	new file:   src/reportWebVitals.js
+	new file:   src/services/api.js
+	new file:   src/services/web3.js
+	new file:   src/setupTests.js
+	new file:   src/styles/Admin.css
+	new file:   src/styles/digilocker.css
+	new file:   src/styles/main.css
+	new file:   src/styles/modal.css
+	new file:   src/utils/constants.js
+
+Unmerged paths:
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+	deleted by us:   README.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   voting-frontend (modified content, untracked content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git_status.txt
+	git_status_utf8.txt
+
