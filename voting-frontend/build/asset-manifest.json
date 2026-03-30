@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8b907b28.css",
+    "main.js": "/static/js/main.74b840d0.js",
+    "static/js/453.dc03eb89.chunk.js": "/static/js/453.dc03eb89.chunk.js",
+    "static/media/step_login.png": "/static/media/step_login.28b6d103549654e2cf43.png",
+    "static/media/step_wallet.png": "/static/media/step_wallet.51ee2dbc06127e37861e.png",
+    "static/media/step_vote.png": "/static/media/step_vote.0cbe1f0b7c310880d033.png",
+    "index.html": "/index.html",
+    "main.8b907b28.css.map": "/static/css/main.8b907b28.css.map",
+    "main.74b840d0.js.map": "/static/js/main.74b840d0.js.map",
+    "453.dc03eb89.chunk.js.map": "/static/js/453.dc03eb89.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b907b28.css",
+    "static/js/main.74b840d0.js"
+  ]
+}
